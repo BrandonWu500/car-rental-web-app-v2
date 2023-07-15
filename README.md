@@ -14,7 +14,7 @@
 
 **Car Rental** is similar to Airbnb, where users can list their cars to be rented by other users or make reservations to rent cars. This project is not associated with an actual company or startup. Its purpose is to act as a portfolio project showcasing my skills and knowledge as a developer. It also simulates what technologies and architecture I would use or work best with in a job for an actual company or startup.
 
-This is the second iteration/version of the project. The business and app logic is pretty similar, but I use a completely different tech stack. Because of this, I created the project from scratch again, rather than adding a different release/version in the first project's repo.
+The title says v2, but this is more of an alternative version as opposed to the second iteration of the project. The business logic is pretty similar, but I use a completely different tech stack. Because of this, I created the project from scratch (in a different repository) rather than building off the code in the first project's repository and creating a different release or version.
 
 [Back To The Top](#car-rental-web-app)
 
