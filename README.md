@@ -24,17 +24,12 @@ This is the second iteration/version of the project. The business and app logic 
 
 #### Development
 
-- Next.js (with pages router)
+- Next.js (with app router)
 - TypeScript
-- Prisma
-- MongoDB
-- NextAuth
-- Tailwind (with class-variance-authority)
-
-#### Testing
-
-- Storybook
-- Cypress (with Testing Library)
+- Supabase
+- PostgreSQL
+- Stripe
+- MUI
 
 #### Project Managment Tools
 
