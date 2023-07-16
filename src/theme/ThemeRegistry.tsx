@@ -6,6 +6,7 @@ import {
   ThemeProvider,
   createTheme,
 } from '@mui/material';
+import { NextAppDirEmotionCacheProvider } from './EmotionCache';
 
 const themeOptions: ThemeOptions = {};
 
@@ -17,10 +18,12 @@ interface ThemeRegistryProps {
 
 const ThemeRegistry = ({ children }: ThemeRegistryProps) => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      {children}
-    </ThemeProvider>
+    <NextAppDirEmotionCacheProvider options={{ key: 'mui' }}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        {children}
+      </ThemeProvider>
+    </NextAppDirEmotionCacheProvider>
   );
 };
 
