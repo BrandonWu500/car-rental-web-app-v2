@@ -8,7 +8,13 @@ import {
 } from '@mui/material';
 import { NextAppDirEmotionCacheProvider } from './EmotionCache';
 
-const themeOptions: ThemeOptions = {};
+const themeOptions: ThemeOptions = {
+  palette: {
+    background: {
+      default: 'royalblue',
+    },
+  },
+};
 
 const theme = createTheme(themeOptions);
 
