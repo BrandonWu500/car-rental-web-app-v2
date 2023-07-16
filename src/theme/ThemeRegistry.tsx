@@ -6,7 +6,8 @@ import {
   ThemeProvider,
   createTheme,
 } from '@mui/material';
-import { NextAppDirEmotionCacheProvider } from './EmotionCache';
+
+import { NextAppDirEmotionCacheProvider } from '../lib/EmotionCache';
 
 const themeOptions: ThemeOptions = {
   palette: {
