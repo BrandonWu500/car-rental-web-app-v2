@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 
 import ThemeRegistry from '@/theme/ThemeRegistry';
 
+import { Navbar } from '@/components/navbar';
+
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -17,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeRegistry>
-        <body>{children}</body>
+        <body>
+          <Navbar />
+          {children}
+        </body>
       </ThemeRegistry>
     </html>
   );
