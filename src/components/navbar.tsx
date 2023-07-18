@@ -1,12 +1,13 @@
 'use client';
 
-import { AppBar, Button, Container, Toolbar } from '@mui/material';
+import { AppBar, Box, Button, Container, Toolbar } from '@mui/material';
 import { Search } from './search';
 import { Logo } from './ui/logo';
+import UserMenu from './user-menu';
 
 export const Navbar = () => {
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: 'white' }}>
+    <AppBar position="sticky" sx={{ backgroundColor: 'inherit' }}>
       <Container maxWidth="xl">
         <Toolbar
           sx={{
@@ -17,16 +18,19 @@ export const Navbar = () => {
         >
           <Logo />
           <Search />
-          <Button
-            sx={{
-              borderRadius: '100vh',
-              px: 2,
-              py: 1,
-              display: { xs: 'none', md: 'block' },
-            }}
-          >
-            Rent out your car
-          </Button>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+            <Button
+              sx={{
+                borderRadius: '100vh',
+                px: 2,
+                py: 1,
+                display: { xs: 'none', md: 'block' },
+              }}
+            >
+              Rent out your car
+            </Button>
+            <UserMenu />
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
