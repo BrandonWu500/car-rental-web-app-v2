@@ -1,6 +1,6 @@
 'use client';
 
-import { AppBar, Container, Toolbar } from '@mui/material';
+import { AppBar, Button, Container, Toolbar } from '@mui/material';
 import { Search } from './search';
 import { Logo } from './ui/logo';
 
@@ -17,6 +17,16 @@ export const Navbar = () => {
         >
           <Logo />
           <Search />
+          <Button
+            sx={{
+              borderRadius: '100vh',
+              px: 2,
+              py: 1,
+              display: { xs: 'none', md: 'block' },
+            }}
+          >
+            Rent out your car
+          </Button>
         </Toolbar>
       </Container>
     </AppBar>
