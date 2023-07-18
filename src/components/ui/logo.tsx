@@ -7,7 +7,14 @@ import Link from 'next/link';
 export const Logo = () => {
   return (
     <Link href={'/'}>
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+      <Box
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 1,
+          color: 'primary.main',
+        }}
+      >
         <CarRental />
         <Typography
           variant="h6"
