@@ -10,11 +10,7 @@ import {
 import { NextAppDirEmotionCacheProvider } from '../lib/EmotionCache';
 
 const themeOptions: ThemeOptions = {
-  palette: {
-    background: {
-      default: 'royalblue',
-    },
-  },
+  palette: {},
 };
 
 const theme = createTheme(themeOptions);
